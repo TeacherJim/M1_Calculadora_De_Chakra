@@ -36,7 +36,7 @@ def get_view(page: ft.Page) -> ft.Column:
         Operar(e, '/')
 
     return ft.Column([
-        ft.Text("Calculadora Ninja", size=30, weight="bold"),
+        ft.Text("Calculadora Ninja", size=30, weight=ft.FontWeight.BOLD),
         num1,
         num2,
         ft.Row([

@@ -26,7 +26,7 @@ def get_view(page: ft.Page) -> ft.Column:
         page.update()
 
     return ft.Column([
-        ft.Text("Rango Ninja", size=30, weight="bold"),
+        ft.Text("Rango Ninja", size=30, weight=ft.FontWeight.BOLD),
         chakra,
         ft.ElevatedButton("Calcular", on_click=Calcular),
         resultado,
