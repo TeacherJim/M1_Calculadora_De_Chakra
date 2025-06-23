@@ -23,7 +23,7 @@ def get_view(page: ft.Page) -> ft.Column: # función que recibe la página y ret
         # Estructura Try-Except para manejar errores de conversión de tipo
         try:
             # Intentamos convertir el valor ingresado a float
-            valor = float(chakra.value)
+            valor = float(chakra.value) # type: ignore
             # Recorremos los rangos para determinar el rango ninja correspondiente
             for limite, rango in RANGOS:
                 # Si el valor ingresado es menor o igual al límite del rango

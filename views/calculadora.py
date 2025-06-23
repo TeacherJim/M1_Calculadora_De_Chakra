@@ -14,8 +14,8 @@ def get_view(page: ft.Page) -> ft.Column:
         #Estructura Try-Except para manejar errores de conversión de tipo
         try:
             # Intentamos convertir los valores ingresados a float
-            n1 = float(num1.value)
-            n2 = float(num2.value)
+            n1 = float(num1.value) # type: ignore
+            n2 = float(num2.value) # type: ignore
             # Dependiendo de la operación seleccionada, realizamos el cálculo
             if op == '+': # Suma
                 r = n1 + n2
